@@ -2,7 +2,7 @@
 
 ## Objective
 
-Analyse the behaviour and efficiency of different sorting algorithms using datasets with various input orders and sizes.
+Analyse the behaviour of a provided sorting program by running it on datasets of different sizes and input orders. Based on the execution times, identify which sorting algorithm the program is using.
 
 ## Concepts Practised
 
@@ -13,15 +13,15 @@ Analyse the behaviour and efficiency of different sorting algorithms using datas
 
 ## What This Assignment Does
 
-This assignment focuses on analysing existing sorting algorithms rather than implementing them. Different datasets are used to observe how the algorithm's performance changes depending on the size and ordering of the input data.
+Unlike the other programming exercises, this assignment does not require writing a sorting algorithm. Instead, a compiled program provided by CS50 is executed on different datasets. By observing its performance on random, sorted, and reverse-sorted inputs, the goal is to determine which sorting algorithm is implemented.
 
 ## Files
 
-- `answers.txt` – my answers to the analysis questions.
+- `answers.txt` – my answers identifying the sorting algorithm and explaining the reasoning.
 - `random5000.txt`, `random10000.txt`, `random50000.txt` – randomly ordered datasets.
-- `reversed5000.txt`, `reversed10000.txt`, `reversed50000.txt` – datasets sorted in reverse order.
+- `reversed5000.txt`, `reversed10000.txt`, `reversed50000.txt` – reverse-sorted datasets.
 - `sorted5000.txt`, `sorted10000.txt`, `sorted50000.txt` – already sorted datasets.
 
 ## What I Learned
 
-This assignment helped me understand how input characteristics influence the performance of sorting algorithms and reinforced my understanding of algorithmic complexity and Big O notation.
+This assignment strengthened my understanding of algorithm analysis and demonstrated how execution time and input characteristics can be used to identify and compare sorting algorithms.
