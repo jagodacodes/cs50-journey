@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: because it reacts strongly when order is correct, when we have big amount of words
+
+sort2 uses: merge sort
+
+How do you know?: it outperforms other types, especially in random order
+
+sort3 uses: selection sort
+
+How do you know?: it doesnt respond strongly to change in order, and is less efficient than sort2
