@@ -16,7 +16,7 @@ This week introduced fundamental algorithms and computational complexity. I lear
 
 - Sort
 - Plurality
-- Runoff (if completed)
+- Runoff
 
 ## Key Takeaways
 
