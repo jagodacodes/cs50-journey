@@ -1,0 +1,94 @@
+#include<cs50.h>
+#include<ctype.h>
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+
+string answering (string plaintext, string key);
+
+int main(int argc, string argv[])
+
+{
+
+
+    if (argc != 2)
+    {
+        return 1;
+    }
+
+    if (strlen(argv[1]) != 26) {
+        return 1;
+    }
+    string key = argv[1];
+    int keylength = strlen(key);
+
+    for (int j = 0; j < keylength; j++)
+    {
+
+        if (!(key[j] <= 90 && key[j] >= 65) && !(key[j] >= 97 && key[j] <= 122))
+        {
+            printf("Use only alphabetical characters in the key.\n");
+            return 1;
+        }
+    }
+
+    for (int i = 0; i <= keylength; i++)
+    {
+        for (int j =0; j <= keylength; j++) {
+                if(i != j)
+                {
+                        if (tolower(key[i]) == tolower(key[j]))
+                        {
+                                return 1;
+                        }
+                }
+        }
+    }
+
+    string plaintext = get_string("plaintext:");
+    int length = strlen(plaintext);
+
+
+        answering(plaintext, key);
+
+        return 0;
+
+}
+
+string answering (string plaintext, string key)
+{
+        int length = strlen(plaintext);
+        //printf("length : %i", length);
+        char answear[length+1];
+
+        for (int i = 0; i < length; i++)
+
+        {
+
+            if (plaintext[i] >= 'A' && plaintext[i] <= 'Z')
+                {
+
+                        answear[i] = key[plaintext[i]-65];
+                        //printf("isupper : %c", answear[i]);
+                        answear[i] = toupper(answear[i]);
+                        continue;
+
+                }
+
+                if (plaintext[i] >= 'a' && plaintext[i] <= 'z')
+                {
+                        answear[i] = tolower(key[plaintext[i]-97]);
+                        //printf("islower : %c", answear[i]);
+                        continue;
+                }
+
+                answear[i] = plaintext[i];
+                //printf("space : %c", answear[i]);
+        }
+
+        answear[length] = '\0';
+        printf("ciphertext:");
+        printf("%s\n", answear);
+
+        return 0;
+}
