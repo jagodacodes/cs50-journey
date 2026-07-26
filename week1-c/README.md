@@ -18,7 +18,6 @@ I learned how to write simple programs, work with variables, conditions and loop
 ## Exercises
 
 - Mario
-- Cash
 - Credit
 
 ## Key Takeaways
