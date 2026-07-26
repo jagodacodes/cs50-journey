@@ -18,7 +18,7 @@ The program scans a forensic image of a memory card, detects the beginning of JP
 ## Files
 
 - `recover.c` – implementation of the JPEG recovery program.
-- `card.raw` *(if included)* – forensic memory card image used as input.
+- `card.raw` – forensic memory card image used as input.
 - `Makefile` – build configuration.
 
 ## What I Learned
